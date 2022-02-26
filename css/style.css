@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f5f6f8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 256px 891px 1fr;
+  grid-template-rows: 162px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background-color: #ffffff;
+  width: 256px;
+  height: 850px;
+}
+
+.logo {
+  margin: 24px 163px 17px 24px;
+}
+
+.person {
+  display: flex;
+  border-top: 1px solid #ebeff2;
+  margin-bottom: 41.5px;
+}
+
+.woman {
+  border-radius: 100px;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+
+.p {
+  margin-top: 28px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #192a3e;
+  text-decoration: none;
+  margin-left: 9px;
+  margin-top: 28px;
+  cursor: auto;
+}
+
+.gmail {
+  font-size: 11px;
+  color: #90a0b7;
+  text-decoration: none;
+  margin-left: 9px;
+  cursor: auto;
+}
+
+.item--active {
+  color: #109cf1;
+}
+
+.draft,
+.scheduled,
+.sent,
+.archived {
+  margin-top: 12px;
+  margin-left: 58px;
+  list-style: none;
+  font-size: 13px;
+  font-family: Poppins;
+  margin-bottom: 8px;
+  vertical-align: middle;
+}
+
+.draft__icon,
+.scheduled__icon,
+.sent__icon,
+.archived__icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.settings-margin {
+  display: flex;
+  border-top: 1px solid #ebeff2;
+  vertical-align: middle;
+}
+
+.settings {
+  margin-top: 24px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.icons {
+  margin-left: 26.5px;
+  vertical-align: middle;
+}
+
+.names {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 16.5px;
+  margin-bottom: 2rem;
+  vertical-align: middle;
+}
+
+/* HEADER */
+
+.header {
+  grid-column-start: span 2;
+  height: 6rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.search {
+  display: flex;
+  margin-left: 38.5px;
+}
+
+.search__input {
+  border: none;
+  font-family: Poppins;
+  font-size: 12px;
+  padding: 2rem;
+}
+
+.search__input:focus {
+  outline: none;
+}
+.bell {
+  margin-right: 20px;
+  position: relative;
+}
+
+.bell__notification {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #f7685b;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FEATURE */
+
+.above {
+  margin-left: 36px;
+  display: flex;
+  align-content: center;
+}
+
+.send__again {
+  list-style-type: none;
+  width: 160px;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #109cf1;
+  margin-bottom: 24px;
+  position: absolute;
+  right: 116px;
+  top: 95px;
+}
+
+.point__email {
+  position: absolute;
+  top: 99px;
+  left: 295px;
+}
+
+.point__left {
+  vertical-align: middle;
+}
+
+.back__to--emails {
+  vertical-align: middle;
+  margin-left: 12.33px;
+  margin-bottom: 45px;
+  font-size: 12px;
+  font-family: Poppins;
+  color: #6a707e;
+}
+
+.feature {
+  width: 825px;
+  height: 697px;
+  background-color: #ffffff;
+  grid-column-start: 2;
+  margin-left: 36px;
+  margin-right: 38px;
+  border-radius: 4px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.grid--container {
+  display: grid;
+  grid-template-rows: 202px 534px;
+  overflow: hidden;
+}
+
+.container__1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left__side,
+.right__side {
+  height: 202px;
+}
+
+/* lefT__side */
+
+.sent__button {
+  color: #ffffff;
+  background-color: #2ed47a;
+  border-radius: 4px;
+  text-align: center;
+  width: 84px;
+  height: 22px;
+  border: none;
+  margin-left: 24px;
+  margin-top: 24px;
+  vertical-align: middle;
+}
+
+.polygon {
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.internal__email {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #192a3e;
+  margin-left: 24px;
+  margin-top: 16px;
+  vertical-align: middle;
+}
+
+.recepients {
+  font-family: Poppins;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 24px;
+  opacity: 50%;
+}
+
+.opens,
+.link {
+  font-family: Poppins;
+  font-size: 13px;
+  margin-top: 8px;
+  opacity: 50%;
+  margin-left: 24px;
+}
+
+.number__150 {
+  color: #109cf1;
+  font-weight: 600;
+  opacity: 100%;
+}
+
+.number__124,
+.number__96 {
+  color: #4c5862;
+}
+
+/* right__side */
+
+.right__side {
+  text-align: end;
+}
+
+.bin {
+  position: absolute;
+  top: 186px;
+  right: 430px;
+}
+
+.red__circle {
+  position: absolute;
+  top: 189px;
+  right: 463px;
+  width: 12px;
+  height: 12px;
+}
+
+.date {
+  font-family: Poppins;
+  font-size: 13px;
+  color: #707683;
+  position: absolute;
+  top: 228px;
+  right: 430px;
+}
+
+.container__2 {
+  border-top: 1px solid #ebeff2;
+}
+
+.image {
+  margin-left: 18px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.lorem {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #192a3e;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.lorem__text {
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: Poppins;
+  font-size: 13px;
+  opacity: 70%;
+  width: 777px;
+}
+
+/* gmail__section */
+
+.gmail__section {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  width: 255px;
+  height: 702px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.recepients__gmail {
+  font-family: Poppins;
+  font-size: 15px;
+  /* margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 27px;
+  margin-right: 16px; */
+  margin: 24px 16px 27px 16px;
+}
+
+/* .search__gmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 223px;
+  height: 40px;
+} */
+
+.action {
+  display: flex;
+
+  width: 223px;
+  height: 40px;
+
+  margin-left: 16px;
+  margin-right: 16px;
+  overflow: hidden;
+  background-color: #f5f8fa;
+}
+
+.search__input--gmail {
+  border: none;
+  font-family: Poppins;
+  font-size: 12px;
+  margin-left: 10.92px;
+  background-color: #f5f8fa;
+}
+
+.svg__search {
+  margin-top: 13px;
+  margin-left: 18.5px;
+  width: 14.57px;
+  height: 14.57px;
+}
+
+.search__input--gmail:focus {
+  outline: none;
+}
+
+.gmail__section {
+  display: grid;
+  grid-template-rows: 135px repeat(11, 52px);
+}
+
+.first,
+.div {
+  border-bottom: 1px solid #ebeff2;
+  overflow: hidden;
+}
+
+.gmail--1,
+.gmail--2,
+.gmail--3,
+.gmail--5,
+.gmail--6,
+.gmail--7,
+.gmail--8,
+.gmail--9,
+.gmail--10,
+.gmail--11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mike,
+.alex,
+.george,
+.nicci,
+.lindsey,
+.jana,
+.dermot,
+.martin,
+.john,
+.judith {
+  font-family: Poppins;
+  font-size: 13px;
+  opacity: 50%;
+  width: 223px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.judith {
+  margin-top: 16px;
+}
+
+.gmail--4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rebecca {
+  font-family: Poppins;
+  font-size: 13px;
+  color: #323c47;
+  width: 223px;
+  height: 20px;
+  margin-left: 16px;
+  /* margin-right: 18px; */
+  overflow: hidden;
+}
+
+.subjects {
+  width: 72px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #ebeff2;
+}
+
+.subject--1 {
+  margin-left: 18px;
+}
+
+.subject--2 {
+  margin-right: 20px;
+  margin-left: 13.33px;
+}
